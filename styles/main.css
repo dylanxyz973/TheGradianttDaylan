@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  font-family: Arial;
+  isolation: isolate;
+  text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.2),
+    2px 2px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+h2 {
+  color: dimgray;
+  font-size: 32px;
+  font-family: Arial;
+  text-align: center;
+}
+
+h3 {
+  color: dimgray;
+  font-size: 24px;
+  font-family: Arial;
+}
+
+p {
+  font-size: 20px;
+  color: dimgray;
+  font-family: Arial;
+}
+
+h6 {
+  font-size: 16px;
+  color: dimgray;
+  font-family: Arial;
+}
+
+/* HTML Links */
+a:not(.topnav a):not(.warm-code-block a):not(.social-link) {
+  color: red;
+  padding: 5px 15px;
+  border: 2px solid red;
+  border-radius: 15px;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin: 25px auto 10px auto;
+  font-size: 20px;
+  background-color: mistyrose;
+}
+
+/* Nav Bar */
+.topnav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+  z-index: 10;
+  padding: 7px 16px;
+  border-radius: 50px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.topnav a {
+  color: firebrick;/* Strong warm red tone */
+  font-size: 18px;
+  font-family: 'Orbitron', sans-serif; /* Futuristic, clean font */
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  text-shadow: 0 0 6px rgba(255, 69, 0, 0.3);
+}
+
+.topnav a:hover {
+  background-color: rgba(139, 0, 0, 0.2); /* subtle deep red hover */
+  color: lightgoldenrodyellow; /* warm and soft contrast */
+  border-radius: 10px;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.6), 0 0 18px rgba(255, 140, 0, 0.4);
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portfolio Page</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="home.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="#">PORTFOLIO</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+
+  <section class="portfolio-section">
+    <h1>MY PORTFOLIO</h1>
+
+    <div class="filter-buttons">
+      <button onclick="filterWorks('all', this)">All</button>
+      <button onclick="filterWorks('design', this)">Designer</button>
+      <button onclick="filterWorks('development', this)">Coder</button>
+    </div>
+
+    <div class="portfolio-box-container">
+
+      <div class="gradient-border">
+        <div class="portfolio-box" data-category="design">
+          <img src="pictures/page.png" alt="Brand Package" style="width:100%; border-radius:20px;">
+          <h2>Brand Package</h2>
+          <p>Graphic Design</p>
+          <div class="description hidden">
+            <a href="design1.html">Click here to find out more!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gradient-border">
+        <div class="portfolio-box" data-category="design">
+          <img src="pictures/wtjk.png" alt="App Prototype" style="width:100%; border-radius:20px;">
+          <h2>App Prototype</h2>
+          <p>UI/UX Design</p>
+          <div class="description hidden">
+            <a href="design2.html">Click here to find out more!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gradient-border">
+        <div class="portfolio-box" data-category="development">
+          <img src="pictures/onfire.png" alt="Hobby Page" style="width:100%; border-radius:20px;">
+          <h2>Hobby Page</h2>
+          <p>Web Development</p>
+          <div class="description hidden">
+            <a href="development1.html">Click here to find out more!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gradient-border">
+        <div class="portfolio-box" data-category="development">
+          <img src="pictures/travel.png" alt="Travel Agency" style="width:100%; border-radius:20px;">
+          <h2>Travel Agency</h2>
+          <p>Web Development</p>
+          <div class="description hidden">
+            <a href="development2.html">Click here to find out more!</a>
+          </div>
+        </div>
+      </div>
+
+       <div class="gradient-border">
+        <div class="portfolio-box" data-category="development">
+          <img src="pictures/uni.png" alt="Unity Project" style="width:100%; border-radius:20px;">
+          <h2>Unity 3D</h2>
+          <p>VR Development</p>
+          <div class="description hidden">
+            <a href="development3.html">Click here to find out more!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gradient-border">
+        <div class="portfolio-box" data-category="development">
+          <img src="pictures/wtjk.png" alt="Travel Agency" style="width:100%; border-radius:20px;">
+          <h2>Supermarket</h2>
+          <p>Web Development</p>
+          <div class="description hidden">
+            <a href="development4.html">Click here to find out more!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gradient-border">
+        <div class="portfolio-box" data-category="development">
+          <img src="pictures/wtjk.png" alt="Travel Agency" style="width:100%; border-radius:20px;">
+          <h2>React</h2>
+          <p>Mobile Development</p>
+          <div class="description hidden">
+            <a href="development5.html">Click here to find out more!</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p><a href="contact.html">Click here to contact me!</a></p>
+
+  </section>
+
+  <script src="portfolio.js"></script>
+
+</body>
+
+</html>

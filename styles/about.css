@@ -1,0 +1,112 @@
+/*this for the about */
+.about-section {
+  background: linear-gradient(
+    135deg,            /* diagonal flow */
+    #FFD93D 40%,       /* strong yellow, covers most */
+    #FF6F61 55%,       /* gentle warm red */
+    #6BCB77 70%,       /* soft green */
+    #4A90E2 85%,       /* lighter blue */
+    #9A7DFF 100%       /* subtle purple at the tail */
+  );
+  background-blend-mode: screen;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh; 
+  padding: 60px 20px 20px ;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 10px auto;
+}
+
+.label-left,
+.label-right {
+  font-size: 2em;
+}
+
+.bar {
+  width: 90%;
+  max-width: 900px;
+  height: 50px;
+  background: linear-gradient(to right, fuchsia 65%, coral 35%);
+  border-radius: 40px;
+  margin: 0 auto 30px auto;
+  border: 2px solid #00000030;
+}
+
+.info {
+  font-size: 1.4em;
+  color: #e0f7fa;
+}
+
+.content-with-note {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 0px 130px;
+}
+
+.note-box-about {
+  width: 360px;
+  height: 360px;
+  background-color: lightyellow;
+  border: 2px solid #00000030;
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 1.3rem;
+  font-family: Arial;
+  color: dimgray;
+  outline: none;
+  resize: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note-box-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.note-box {
+  flex: 1;
+  height: 200px;
+  padding: 20px;
+  background-color: moccasin;
+  color: dimgray;
+  border: none; 
+  border-radius: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: Arial;
+  overflow-y: auto; 
+}
+
+
+.left-note {
+  text-align: left;
+}
+
+.right-note {
+  text-align: left;
+}
+
+.label-left{
+  color: dimgray;
+}
+
+.label-right{
+  color: dimgray;
+}

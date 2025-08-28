@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hobby Website</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/d3d.css">
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="home.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="portfolio.html">PORTFOLIO</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+
+  <section class="design-details-section">
+    <div class="tool-section">
+      <span class="label">Application Used:</span>
+      <div class="tool-box">
+        <img src="pictures/js.webp" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+      <span class="label">Framework Used:</span>
+      <div class="tool-box">
+        <img src="pictures/bo.png" alt="Bootstrap">
+        <span>Bootstrap</span>
+      </div>
+    </div>
+    </div>
+    
+    <div class="description-text">
+      <p>
+        This project is a simple hobby website which enables users to perform basic functionalities such as adding,
+        editing, and deleting the drawings.
+        Enhancements were given such as when a user wants to delete a drawing, a prompt appears to confirm the action.
+        Also, when users click on details it will display description.
+
+      </p>
+      <h6>Click on the images to view the webpage layout and </h6>
+    </div>
+
+    <div class="gallery">
+      <img src="pictures/home.png" class="gallery-item" alt="Home Page" data-src="pictures/home.png"
+        data-label="Home Page">
+      <img src="pictures/list.png" class="gallery-item" alt="Very cute" data-src="pictures/list.png"
+        data-label="List Page">
+      <img src="pictures/det.png" class="gallery-item" alt="description" data-src="pictures/det.png"
+        data-label="Details Page">
+      <img src="pictures/del.png" class="gallery-item" alt="Prompt appearing" data-src="pictures/del.png"
+        data-label="Delete Prompt">
+      <img src="pictures/edit.png" class="gallery-item" alt="Edit Page" data-src="pictures/edit.png"
+        data-label="Edit Page">
+      <img src="pictures/add.png" class="gallery-item" alt="Add Page" data-src="pictures/add.png" data-label="Add Page">
+    </div>
+
+    <div class="modal" id="modal">
+      <span class="close" id="modalClose">&times;</span>
+
+      <!-- Modal Image -->
+      <img class="modal-content" id="modal-img" alt="Expanded view">
+
+      <!-- Label below the image -->
+      <div class="modal-label" id="modal-label">Home Page</div>
+
+      <!-- Navigation Arrows -->
+      <div class="nav left" id="prev">&#10094;</div>
+      <div class="nav right" id="next">&#10095;</div>
+    </div>
+
+    <a href="portfolio.html" class="back-link">← Go back to Portfolio</a>
+
+  </section>
+
+  <script src="gallery.js"></script>
+
+</body>
+
+</html>

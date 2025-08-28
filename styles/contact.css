@@ -1,0 +1,76 @@
+/*this for the contact*/
+.contact-section {
+ background:  radial-gradient(at 25% 30%, #FEE9B2, transparent 60%),  
+              radial-gradient(at 70% 20%, #C7CEEA, transparent 60%),  
+              radial-gradient(at 40% 75%, #FFB7B2, transparent 60%),  
+              radial-gradient(at 85% 70%, #A2D2FF, transparent 60%); 
+  position: relative;
+  z-index: 1; 
+  min-height: 100vh; 
+  padding: 60px 20px 20px;
+}
+ 
+
+.form-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  font-family: Arial 
+}
+
+textarea {
+  height: 200px;
+  resize: none;
+}
+
+button {
+  background-color: white;
+  color: dimgray;
+  font-size: 24px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Centering the logo container */
+.social-section {
+  display: flex;
+  justify-content: center; 
+  padding: 40px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.social-section a {
+  color: dimgray; 
+  border: none; 
+  padding: 0; 
+  text-decoration: none; 
+  display: inline-flex; 
+}
+
+.social-icons a i {
+  color: dimgray; 
+  font-size: 70px;
+}
