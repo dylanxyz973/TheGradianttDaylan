@@ -9,31 +9,47 @@
 
 <body>
     <div class="topnav">
-        <a href="#">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="portfolio.html">PORTFOLIO</a>
-        <a href="contact.html">CONTACT</a>
+        <a href="#">WELCOME</a>
+        <a href="about.html">PROFILE</a>
+        <a href="portfolio.html">WORKS</a>
+
+        <div class="dropdown">
+            <a href="#">CONNECT ▾</a>
+            <div class="dropdown-content">
+                <a href="mailto:23021395@myrp.edu.sg">Email</a>
+                <a href="https://linkedin.com/in/chin-ding-rui-dylan-0a8712276/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/dylanxyz973" target="_blank">GitHub</a>
+            </div>
+        </div>
     </div>
+
 
     <div class="home-section">
         <div class="home-text">
-            <h1>WELCOME TO MY PLAYHOUSE!</h1>
+            <h1>WARM GREETINGS!</h1>
             <h2>I am a <span id="changing-role">student</span>.</h2>
         </div>
 
         <div class="warm-code-block">
-            <span class="function">print</span><span class="string">("I am excited you are here to view my portfolio")</span>
-            <span class="var">creator</span> = <span class="string">"dylan :D"</span>
+            <span class="comment"># What's up! My name is Ding Rui, also known as Dylan.</span><br>
+            <span class="comment"># I am currently a Year 2 student at Republic Polytechnic,</span><br>
+            <span class="comment"># pursuing a course in Digital Design and Development.</span><br><br>
 
-            <span class="keyword">if</span> <span class="var">work</span> == <span class="value">True</span>:
-            <a href="portfolio.html">click here to view my works</a>
+            <span class="function">print</span>
+            <span class="string">("I am excited you are here to view my portfolio!")</span><br>
 
-            <span class="keyword">elif</span> <span class="var">me</span> == <span class="value">True</span>:
-            <a href="about.html">click about me</a>
+            <span class="var">creator</span> = <span class="string">"dylan :D"</span><br><br>
 
-            <span class="keyword">else</span>:
-            <span class="function">print</span><span class="string">("Thank you for visiting! 😊")</span>
-            <a href="https://www.google.com" target="_self"
+            <span class="keyword">if</span> <span class="var">work</span> == <span class="value">True</span>:<br>
+            &nbsp;&nbsp;<a href="portfolio.html">click here to view my works</a><br><br>
+
+            <span class="keyword">elif</span> <span class="var">me</span> == <span class="value">True</span>:<br>
+            &nbsp;&nbsp;<a href="about.html">click about me</a><br><br>
+
+            <span class="keyword">else</span>:<br>
+            &nbsp;&nbsp;<span class="function">print</span>
+            <span class="string">("Thank you for visiting! 😊")</span><br>
+            &nbsp;&nbsp;<a href="https://www.google.com" target="_self"
                 onclick="window.open('https://www.google.com', '_self'); window.close(); return false;">
                 click here to exit (Have a great day!)
             </a>

@@ -1,18 +1,59 @@
-/*this for the about */
 .about-section {
-  background: linear-gradient(
-    135deg,            /* diagonal flow */
-    #FFD93D 40%,       /* strong yellow, covers most */
-    #FF6F61 55%,       /* gentle warm red */
-    #6BCB77 70%,       /* soft green */
-    #4A90E2 85%,       /* lighter blue */
-    #9A7DFF 100%       /* subtle purple at the tail */
-  );
-  background-blend-mode: screen;
+  background: 
+    /* 💜 softer purple haze (top-right) */
+    radial-gradient(at 82% 18%, #CBB7FF 0%, #BFA3FF99 26%, transparent 50%), 
+    radial-gradient(at 68% 10%, #BEA2FF 0%, #B08DFF88 30%, transparent 56%), 
+    
+    /* 🍋 pale yellow wash (top-left, subtle to kill white) */
+    radial-gradient(at 8% 12%, #FFF5BF 0%, #FFF5BF77 20%, transparent 46%), 
+    
+    /* 🌸 pink veil mid-top */
+    radial-gradient(at 52% 28%, #FFB6D9 0%, #FF9FCCaa 24%, transparent 44%), 
+    
+    /* 🧡 coral accent (slightly higher) */
+    radial-gradient(at 42% 38%, #FF9F9F 0%, #FF9F9F99 20%, transparent 42%), 
+    
+    /* 🍊 soft orange bridge (mid-lower) */
+    radial-gradient(at 40% 70%, #FFBE85 0%, #FFBE85aa 22%, transparent 46%), 
+    
+    /* 💚 green revived (bottom-left corner) */
+    radial-gradient(at 18% 88%, #72E6A6 0%, #57D78Fbb 24%, transparent 48%),
+    
+    /* 💙 calming blue bottom-right */
+    radial-gradient(at 76% 88%, #6AB8FF 0%, #6AB8FFbb 24%, transparent 48%);
+    
   background-size: cover;
   position: relative;
-  min-height: 100vh; 
-  padding: 60px 20px 20px ;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: auto;
+  padding: 60px 20px 20px;
+}
+
+.note-box {
+  background: linear-gradient(
+    135deg,
+    #fff44f,  /* lemon yellow, zesty & bright */
+    #ffe066,  /* mid yellow */
+    #ffd93d,  /* golden yellow */
+    #ffcc00   /* deeper sun yellow (reduced amber) */
+  );
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px 0;             /* spacing between note boxes */
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #2c2c2c;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.center-h1 {
+  display: flex;
+  justify-content: center;   /* vertical */
+  align-items: center;       /* horizontal */
 }
 
 .label-row {
@@ -38,62 +79,6 @@
   margin: 0 auto 30px auto;
   border: 2px solid #00000030;
 }
-
-.info {
-  font-size: 1.4em;
-  color: #e0f7fa;
-}
-
-.content-with-note {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 10px;
-  margin-top: 20px;
-  padding: 0px 130px;
-}
-
-.note-box-about {
-  width: 360px;
-  height: 360px;
-  background-color: lightyellow;
-  border: 2px solid #00000030;
-  border-radius: 12px;
-  padding: 20px;
-  font-size: 1.3rem;
-  font-family: Arial;
-  color: dimgray;
-  outline: none;
-  resize: none;
-  overflow-y: auto;
-  overflow-x: hidden;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-.note-box-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
-}
-
-.note-box {
-  flex: 1;
-  height: 200px;
-  padding: 20px;
-  background-color: moccasin;
-  color: dimgray;
-  border: none; 
-  border-radius: 20px;
-  font-size: 18px;
-  line-height: 1.5;
-  font-family: Arial;
-  overflow-y: auto; 
-}
-
 
 .left-note {
   text-align: left;

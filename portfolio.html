@@ -10,14 +10,25 @@
 <body>
 
   <div class="topnav">
-    <a href="home.html">HOME</a>
-    <a href="about.html">ABOUT</a>
-    <a href="#">PORTFOLIO</a>
-    <a href="contact.html">CONTACT</a>
+    <a href="home.html">WELCOME</a>
+    <a href="about.html">PROFILE</a>
+    <a href="#">WORKS</a>
+
+    <div class="dropdown">
+      <a href="#">CONNECT ▾</a>
+      <div class="dropdown-content">
+        <a href="mailto:23021395@myrp.edu.sg">Email</a>
+        <a href="https://linkedin.com/in/chin-ding-rui-dylan-0a8712276/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/dylanxyz973" target="_blank">GitHub</a>
+      </div>
+    </div>
   </div>
 
+
   <section class="portfolio-section">
-    <h1>MY PORTFOLIO</h1>
+    <h1>THE CREATIONS</h1>
+
+    <p>Click on the boxes to see more information about each work</p>
 
     <div class="filter-buttons">
       <button onclick="filterWorks('all', this)">All</button>
@@ -27,86 +38,51 @@
 
     <div class="portfolio-box-container">
 
-      <div class="gradient-border">
-        <div class="portfolio-box" data-category="design">
-          <img src="pictures/page.png" alt="Brand Package" style="width:100%; border-radius:20px;">
-          <h2>Brand Package</h2>
-          <p>Graphic Design</p>
-          <div class="description hidden">
-            <a href="design1.html">Click here to find out more!</a>
-          </div>
-        </div>
+      <div class="portfolio-box" data-category="design" data-link="design1.html">
+        <img src="pictures/page.png" alt="Brand Package" style="width:100%; border-radius:20px;">
+        <h2>Brand Package</h2>
+        <p>Graphic Design</p>
       </div>
 
-      <div class="gradient-border">
-        <div class="portfolio-box" data-category="design">
-          <img src="pictures/wtjk.png" alt="App Prototype" style="width:100%; border-radius:20px;">
-          <h2>App Prototype</h2>
-          <p>UI/UX Design</p>
-          <div class="description hidden">
-            <a href="design2.html">Click here to find out more!</a>
-          </div>
-        </div>
+      <div class="portfolio-box" data-category="design" data-link="design2.html">
+        <img src="pictures/wtjk.png" alt="App Prototype" style="width:100%; border-radius:20px;">
+        <h2>App Prototype</h2>
+        <p>UI/UX Design</p>
       </div>
 
-      <div class="gradient-border">
-        <div class="portfolio-box" data-category="development">
-          <img src="pictures/onfire.png" alt="Hobby Page" style="width:100%; border-radius:20px;">
-          <h2>Hobby Page</h2>
-          <p>Web Development</p>
-          <div class="description hidden">
-            <a href="development1.html">Click here to find out more!</a>
-          </div>
-        </div>
+      <div class="portfolio-box" data-category="development" data-link="development1.html">
+        <img src="pictures/onfire.png" alt="Hobby Page" style="width:100%; border-radius:20px;">
+        <h2>Hobby Page</h2>
+        <p>Web Development</p>
       </div>
 
-      <div class="gradient-border">
-        <div class="portfolio-box" data-category="development">
-          <img src="pictures/travel.png" alt="Travel Agency" style="width:100%; border-radius:20px;">
-          <h2>Travel Agency</h2>
-          <p>Web Development</p>
-          <div class="description hidden">
-            <a href="development2.html">Click here to find out more!</a>
-          </div>
-        </div>
+      <div class="portfolio-box" data-category="development" data-link="development2.html">
+        <img src="pictures/travel.png" alt="Travel Agency" style="width:100%; border-radius:20px;">
+        <h2>Travel Agency</h2>
+        <p>Web Development</p>
       </div>
 
-       <div class="gradient-border">
-        <div class="portfolio-box" data-category="development">
-          <img src="pictures/uni.png" alt="Unity Project" style="width:100%; border-radius:20px;">
-          <h2>Unity 3D</h2>
-          <p>VR Development</p>
-          <div class="description hidden">
-            <a href="development3.html">Click here to find out more!</a>
-          </div>
-        </div>
+      <div class="portfolio-box" data-category="development" data-link="development3.html">
+        <img src="pictures/uni.png" alt="Unity Project" style="width:100%; border-radius:20px;">
+        <h2>Unity 3D</h2>
+        <p>VR Development</p>
       </div>
 
-      <div class="gradient-border">
-        <div class="portfolio-box" data-category="development">
-          <img src="pictures/wtjk.png" alt="Travel Agency" style="width:100%; border-radius:20px;">
-          <h2>Supermarket</h2>
-          <p>Web Development</p>
-          <div class="description hidden">
-            <a href="development4.html">Click here to find out more!</a>
-          </div>
-        </div>
+      <div class="portfolio-box" data-category="development" data-link="development4.html">
+        <img src="pictures/wtjk.png" alt="Travel Agency" style="width:100%; border-radius:20px;">
+        <h2>Supermarket</h2>
+        <p>Web Development</p>
       </div>
 
-      <div class="gradient-border">
-        <div class="portfolio-box" data-category="development">
-          <img src="pictures/wtjk.png" alt="Travel Agency" style="width:100%; border-radius:20px;">
-          <h2>React</h2>
-          <p>Mobile Development</p>
-          <div class="description hidden">
-            <a href="development5.html">Click here to find out more!</a>
-          </div>
-        </div>
+      <div class="portfolio-box" data-category="development" data-link="development5.html">
+        <img src="pictures/wtjk.png" alt="Travel Agency" style="width:100%; border-radius:20px;">
+        <h2>React</h2>
+        <p>Mobile Development</p>
       </div>
 
     </div>
 
-    <p><a href="contact.html">Click here to contact me!</a></p>
+    <p><a href="contact.html">Click to contact me!</a></p>
 
   </section>
 

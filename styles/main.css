@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://api.fontshare.com/css?f[]=poppins-rounded@400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 
 body,
 html {
@@ -9,40 +14,47 @@ html {
 }
 
 h1 {
-  color: white;
   font-size: 50px;
-  font-family: Arial;
+  font-family: 'Poppins Rounded', cursive; 
   isolation: isolate;
-  text-shadow:
-    1px 1px 2px rgba(0, 0, 0, 0.2),
-    2px 2px 4px rgba(0, 0, 0, 0.15);
   text-align: center;
+  align-items: center;
+  font-weight: 700;
+  width: max-content;
+  max-width: 100%;
+  background: linear-gradient(
+    to right,
+    #ff1744 0%,   /* vivid red */
+    #ff6f00 25%,  /* deep orange */
+    #ff4fc3 50%,  /* hot pink bridge */
+    #2979ff 75%,  /* bold blue */
+    #8e24aa 100%  /* strong violet */
+  );
+  -webkit-background-clip: text; 
+  background-clip: text;        
+  color: transparent;
 }
 
 h2 {
   color: dimgray;
   font-size: 32px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   text-align: center;
+  margin-top: 0.2em;
 }
 
 h3 {
-  color: dimgray;
+  color: cadetblue;
   font-size: 24px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 }
 
 p {
   font-size: 20px;
-  color: dimgray;
+  color: black;
   font-family: Arial;
 }
 
-h6 {
-  font-size: 16px;
-  color: dimgray;
-  font-family: Arial;
-}
 
 /* HTML Links */
 a:not(.topnav a):not(.warm-code-block a):not(.social-link) {
@@ -67,7 +79,6 @@ a:not(.topnav a):not(.warm-code-block a):not(.social-link) {
   width: 90%;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(8px);
-  overflow: hidden;
   z-index: 10;
   padding: 7px 16px;
   border-radius: 50px;
@@ -81,7 +92,7 @@ a:not(.topnav a):not(.warm-code-block a):not(.social-link) {
 .topnav a {
   color: firebrick;/* Strong warm red tone */
   font-size: 18px;
-  font-family: 'Orbitron', sans-serif; /* Futuristic, clean font */
+  font-family: 'audiowide', sans-serif; /* Futuristic, clean font */
   text-decoration: none;
   letter-spacing: 1px;
   font-weight: bold;
@@ -95,4 +106,49 @@ a:not(.topnav a):not(.warm-code-block a):not(.social-link) {
   color: lightgoldenrodyellow; /* warm and soft contrast */
   border-radius: 10px;
   text-shadow: 0 0 12px rgba(255, 215, 0, 0.6), 0 0 18px rgba(255, 140, 0, 0.4);
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  overflow: visible; 
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* appears below CONNECT */
+  left: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  min-width: 160px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 20;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+  color: firebrick;
+  font-size: 16px;
+  font-family: 'audiowide', sans-serif;
+  text-decoration: none;
+  display: block;
+  padding: 10px 14px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  z-index: 20;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+  background-color: rgba(139, 0, 0, 0.2);
+  color: lightgoldenrodyellow;
+  border-radius: 6px;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }

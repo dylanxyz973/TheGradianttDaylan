@@ -1,12 +1,11 @@
 function filterWorks(category, clickedButton) {
-  const wrappers = document.querySelectorAll('.gradient-border'); // target wrapper, not box
+  const boxes = document.querySelectorAll('.portfolio-box');
 
-  wrappers.forEach(wrapper => {
-    const box = wrapper.querySelector('.portfolio-box'); // find inner box
+  boxes.forEach(box => {
     if (category === 'all' || box.dataset.category === category) {
-      wrapper.style.display = ''; // keep original CSS layout
+      box.style.display = '';
     } else {
-      wrapper.style.display = 'none'; // hide whole wrapper
+      box.style.display = 'none';
     }
   });
   
@@ -18,15 +17,14 @@ function filterWorks(category, clickedButton) {
   }
 }
 
-// Keep your existing toggle description code
-document.querySelectorAll('.portfolio-box').forEach(box => {
-  box.addEventListener('click', function (event) {
-    event.stopPropagation();
-    document.querySelectorAll('.portfolio-box .description')
-      .forEach(desc => desc.classList.add('hidden'));
-
-    const desc = this.querySelector('.description');
-    desc.classList.toggle('hidden');
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.portfolio-box').forEach(box => {
+    box.addEventListener('click', () => {
+      const url = box.dataset.link;
+      if (url) {
+        window.location.href = url;
+      }
+    });
   });
 });
 
@@ -41,4 +39,5 @@ window.onload = () => {
   const allButton = document.querySelector('.filter-buttons button'); // first button is "All"
   filterWorks('all', allButton);
 };
+
 

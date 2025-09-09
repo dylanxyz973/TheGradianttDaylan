@@ -1,9 +1,0 @@
-# GitHub Pages configuration
-defaults:
-  - scope:
-      path: ""       # applies to all files in the root
-      type: "pages"
-    values:
-      permalink: /   # makes this file the homepage
-      layout: null   # use your own HTML layout
-      title: Home    # optional title

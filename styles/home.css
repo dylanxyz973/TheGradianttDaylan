@@ -1,5 +1,5 @@
-/* Home Section */
 .home-section {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8,31 +8,51 @@
   text-align: center;
   overflow: auto;
   padding: 60px 20px 20px;
-  background:
-  /* 🌞 golden sunlight spilling diagonally */
-  radial-gradient(ellipse 100% 50% at 20% 10%, #FFD700ee 0%, #FFD166cc 25%, transparent 70%),
-  radial-gradient(ellipse 80% 40% at 30% 20%, #FFB300aa 0%, transparent 65%),
+}
 
-  /* 🍊 deep orange glow bottom-left */
-  radial-gradient(ellipse 90% 50% at 5% 90%, #FF7A1Aee 0%, #FF9E6Dcc 20%, transparent 60%),
-
-  /* 🔵 crisp blue top-right */
-  radial-gradient(at 95% 5%, #3A7CFF 0%, #4D96FFcc 25%, transparent 60%),
-
-  /* 🟢 teal mid-right */
-  radial-gradient(at 95% 50%, #1BD6A4 0%, #06D6A0bb 30%, transparent 55%),
-
-  /* 🌿 mint bottom-right */
-  radial-gradient(at 90% 100%, #6BCB77 0%, #6BCB77aa 28%, transparent 60%),
-
-  /* 🔴 subtle red (toned way down) bottom-mid-right */
-  radial-gradient(at 80% 85%, #E63946cc 0%, #E6394677 20%, transparent 55%),
-
-  /* 🟠 subtle orange highlight top-left for balance */
-  radial-gradient(at 10% 15%, #FF6F3Caa 0%, transparent 50%);
+.home-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    /* 🍊 orange top-left */
+    radial-gradient(circle at -10% 10%, rgba(255,115,0,0.78) 0%, transparent 55%),
+    
+    /* 🔵 blue top-right */
+    radial-gradient(circle at 105% -5%, rgba(77,170,255,0.95) 0%, transparent 70%),
+    
+    /* 💜 purple — stronger */
+    radial-gradient(circle at 65% 18%, rgba(170,130,255,1) 0%, rgba(170,130,255,0.85) 15%, transparent 55%),
+    
+    /* 💖 pink — stronger */
+    radial-gradient(circle at 52% 30%, rgba(255,94,196,1) 0%, rgba(255,94,196,0.85) 18%, transparent 58%),
+    
+    /* 🟢 teal right-mid */
+    radial-gradient(circle at 95% 55%, rgba(0,196,140,0.9) 0%, rgba(0,196,140,0.6) 25%, transparent 70%),
+    
+    /* 🌿 mint bottom-right */
+    radial-gradient(circle at 100% 105%, rgba(62,220,129,0.9) 0%, rgba(62,220,129,0.55) 25%, transparent 72%),
+    
+    /* 🟡 yellow bridge bottom */
+    radial-gradient(circle at 65% 105%, rgba(255,210,60,0.75) 0%, rgba(255,210,60,0.45) 28%, transparent 68%),
+    
+    /* 🟠 orange bottom edge */
+    radial-gradient(circle at 30% 105%, rgba(255,111,0,0.88) 0%, rgba(255,111,0,0.55) 25%, transparent 70%),
+    
+    /* 🔴 red bottom-left */
+    radial-gradient(circle at -5% 100%, rgba(230,57,70,0.92) 0%, rgba(230,57,70,0.55) 22%, transparent 72%),
+    
+    /* 🌞 golden yellow washes */
+    radial-gradient(circle at 15% -10%, rgba(255,217,61,0.9) 0%, transparent 60%),
+    radial-gradient(circle at 85% 110%, rgba(255,200,0,0.85) 0%, transparent 65%);
   
-  background-color: #0d0d0d; /* 🔲 deep backdrop so colors pop */
-  background-blend-mode: screen;
+  mix-blend-mode: screen;
+  z-index: 0;
+}
+
+.home-section > * {
+  position: relative;
+  z-index: 1;
 }
 
 .home-text {
@@ -63,3 +83,7 @@
 .warm-code-block .comment { color: #a0522d; font-style: italic; }
 .warm-code-block .number { color: #b45f06; }
 
+.comment {
+  color: #a8a8a8; /* muted gray like code comments */
+  font-style: italic;
+}

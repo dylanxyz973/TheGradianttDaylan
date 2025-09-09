@@ -1,12 +1,30 @@
-/*this for the design and development html*/
-.design-details-section {
-  background-color: blanchedalmond;
+.display {
+  background: 
+    /* 🌅 golden warmth shifted slightly higher-right */
+    radial-gradient(at 82% 18%, #ffe08a 0%, #ffe08acc 28%, #ffe08a66 45%, transparent 60%),
+
+    /* 🌿 pastel mint bottom-left (keeps freshness, opposite yellow) */
+    radial-gradient(at 18% 82%, #b6f0d9 0%, #b6f0d9cc 25%, #b6f0d988 42%, transparent 58%),
+
+    /* 💜 lilac creativity bottom-right (now balanced with mint bottom-left) */
+    radial-gradient(at 88% 85%, #c9aaff 0%, #b48dffcc 26%, #b48dff88 44%, transparent 58%),
+
+    /* 💙 soft sky fade top-left (pairs with lilac bottom-right) */
+    radial-gradient(at 12% 20%, #a3d7ff 0%, #a3d7ffcc 24%, #a3d7ff88 42%, transparent 55%),
+
+    /* 🧡 apricot haze mid (gentle warmth bridge) */
+    radial-gradient(at 50% 65%, #ffd4a3cc 0%, #ffd4a388 28%, transparent 52%),
+
+    /* 💗 faint pink veil top-center (ties yellow + blue together) */
+    radial-gradient(at 50% 8%, #ffb6d9cc 0%, #ffb6d988 24%, transparent 48%);
+  
   padding: 100px 20px 40px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 
 .description-text {
   max-width: 800px;
