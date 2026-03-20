@@ -55,7 +55,6 @@
   font-size: 56px;         /* Larger than your body text */
   margin-bottom: 45px;     /* Adds space between the title and your image/text */
   text-transform: uppercase; /* Optional: Makes it feel more like a "header" */
-  letter-spacing: 1px;     /* Adds a bit of breathing room between letters */
 }
 
 .container {  

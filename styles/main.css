@@ -20,12 +20,10 @@ section.mobile-bg::before {
   content: "";
   position: absolute;
   inset: 0;
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1440px auto;
   background-attachment: fixed;
-
   z-index: -1;
 }
 
@@ -139,6 +137,7 @@ h1 {
   margin: 0; 
   margin-bottom: 20px;
   color: #F4EAD0;
+  letter-spacing: 1px;     /* Adds a bit of breathing room between letters */
 }
 
 .center-h1 {
@@ -392,3 +391,32 @@ a.python:hover {
   font-weight: bold;
   line-height: 1.6;
 }
+
+/* === Filter Buttons === */
+.filter-buttons {
+  text-align: center;
+}
+
+.filter-buttons button {
+  font-size: 22px;
+  padding: 8px 12px;
+  margin: 10px;  /* Space between buttons */
+  background: rgba(255,255,255,0.2);
+  border: 2px solid transparent;
+  color: #F4EAD0 !important;
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: 'Nunito';
+  font-weight: 700;
+}
+
+/* Hover only for non-active buttons */
+.filter-buttons button:hover:not(.active) {
+  background: rgba(255,255,255,0.45);
+  color: #00F5FF;
+}
+
+.filter-buttons button.active {  
+  background: rgba(255,255,255,0.2);
+  border: 2px solid #F4EAD0;
+};
